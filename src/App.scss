@@ -1,0 +1,19 @@
+$TextColor: rgb(228, 228, 228);
+$HoverColor: black;
+
+.title {
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    color: $TextColor;
+}
+
+h2 {
+    color: $TextColor;
+    &:hover {
+        color: $HoverColor;
+    }
+}
+
+.nav-gap {
+    margin-bottom: 20px;
+}
