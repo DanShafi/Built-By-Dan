@@ -4,6 +4,7 @@ import './App.scss';
 import Container from 'react-bootstrap/Container'
 import Hero from "./components/Hero"
 import Navigation from "./components/Navigation"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Container className="p-0">
         <Navigation />
         <Hero />
+        <Footer />
       </Container>
     </Router>
   );

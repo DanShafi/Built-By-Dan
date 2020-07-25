@@ -1,18 +1,32 @@
-.title {
-  font-weight: bold;
-  letter-spacing: -0.03em;
-  color: #e4e4e4;
+#root,
+html {
+  background-color: #0c0c0c;
 }
 
-h2 {
-  color: #e4e4e4;
-}
-
-h2:hover {
-  color: black;
+.nav-style {
+  font-family: acumin, sans-serif;
 }
 
 .nav-gap {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.hr-line {
+  border: 1px solid #707070;
+  width: 70px;
+  margin: 50px 0px 50px 0px;
+}
+
+.dark-hero-text {
+  color: white;
+  font-family: acumin, sans-serif;
+  font-weight: 600;
+  font-size: 160px;
+  line-height: 80%;
+  letter-spacing: -0.06em;
+}
+
+.sub-text {
+  color: white;
 }
 /*# sourceMappingURL=App.css.map */

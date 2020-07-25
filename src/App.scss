@@ -1,19 +1,38 @@
-$TextColor: rgb(228, 228, 228);
-$HoverColor: black;
+$LightModeText: rgb(228, 228, 228);
+$LightModeBg: black;
+$DarkModeText: white;
+$DarkModeBg: #0c0c0c;
+$MarginGapBottom: 50px;
+$PrimaryFont: acumin, sans-serif;
 
-.title {
-    font-weight: bold;
-    letter-spacing: -0.03em;
-    color: $TextColor;
+#root,
+html {
+    background-color: $DarkModeBg;
 }
 
-h2 {
-    color: $TextColor;
-    &:hover {
-        color: $HoverColor;
-    }
+.nav-style {
+    font-family: $PrimaryFont;
 }
 
 .nav-gap {
-    margin-bottom: 20px;
+    margin-bottom: $MarginGapBottom;
+}
+
+.hr-line {
+    border: 1px solid rgb(112, 112, 112);
+    width: 70px;
+    margin: 50px 0px 50px 0px;
+}
+
+.dark-hero-text {
+    color: $DarkModeText;
+    font-family: $PrimaryFont;
+    font-weight: 600;
+    font-size: 160px;
+    line-height: 80%;
+    letter-spacing: -0.06em;
+}
+
+.sub-text {
+    color: $DarkModeText;
 }
