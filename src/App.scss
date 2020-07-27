@@ -9,9 +9,7 @@ $PrimaryFont: acumin, sans-serif;
 html,
 body {
     background-color: $DarkModeBg;
-}
-
-.nav-style {
+    color: $DarkModeText;
     font-family: $PrimaryFont;
 }
 
@@ -26,14 +24,27 @@ body {
 }
 
 .dark-hero-text {
-    color: $DarkModeText;
-    font-family: $PrimaryFont;
     font-weight: 600;
     font-size: 160px;
     line-height: 80%;
     letter-spacing: -0.06em;
 }
 
-.sub-text {
-    color: $DarkModeText;
+.dark-title-text {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80%;
+    letter-spacing: -0.06em;
+}
+
+.blog-title {
+    font-weight: 600;
+    letter-spacing: -0.06em;
+}
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+    .dark-hero-text {
+        font-size: 90px;
+    }
 }

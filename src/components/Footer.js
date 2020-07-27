@@ -1,10 +1,9 @@
 import React from "react"
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="mt-5">
             <Container>
                 <div className="row">
                     <p>© 2020 // Built By Dan.</p>
