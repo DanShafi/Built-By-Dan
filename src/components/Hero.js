@@ -1,11 +1,14 @@
 import React from "react"
 import Typical from "react-typical"
+import {BrowserRouter as Link} from 'react-router-dom'
+import BG from '../media/Plus-Sign-Dark-Mode-BG.svg'
 
-class Home extends React.Component {
+class Hero extends React.Component {
     render() {
         return (
-            <div className="container p-0">
-                <div>                
+            <div className="container">
+                <img src={BG} alt={"Plus Sign Background"} height="20px" />
+                <div style={{height: "450px"}}>                
                     <Typical 
                     className ="dark-hero-text"
                     wrapper="h1"
@@ -25,9 +28,27 @@ class Home extends React.Component {
                     There is no smoke and mirrors here - WYSIWYG.
                     </p>
                 </div>
+                <div>
+                <ul>
+                    <li>
+                    <Link className="animated-arrow" to="/projects">
+                        <span class="the-arrow -left">
+                        <span class="shaft"></span>
+                        </span>
+                        <span class="main">
+                        <span class="text" className="">
+                            To The Projects
+                        </span>
+                        <span class="the-arrow -right">
+                            <span class="shaft"></span>
+                        </span>
+                        </span></Link>
+                    </li>
+                </ul>
+                </div>
             </div>
         ) 
     }
 }
 
-export default Home
+export default Hero
