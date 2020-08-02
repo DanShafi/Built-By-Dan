@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Container } from 'react-bootstrap'
 
-class PostView extends Component {
+class BlogView extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,10 +30,10 @@ class PostView extends Component {
     let build;
     if (this.state.post.title) {
       build = (
-        <div>
-          <h1>{this.state.post.title.rendered}</h1>
+        <Container style={{maxWidth: '800px'}}>
+          <h1 className="blog-title">{this.state.post.title.rendered}</h1>
           <div dangerouslySetInnerHTML={this.createMarkup( this.state.post.content.rendered )} />
-        </div>
+        </Container>
       );
     } else {
       build = <div />;
@@ -41,4 +42,4 @@ class PostView extends Component {
   }
 }
 
-export default PostView;
+export default BlogView;

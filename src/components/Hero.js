@@ -7,7 +7,7 @@ class Hero extends React.Component {
     render() {
         return (
             <div className="container">
-                <img src={BG} alt={"Plus Sign Background"} height="20px" />
+                <img src={BG} alt={"Plus Sign Background"} height="150px" />
                 <div style={{height: "450px"}}>                
                     <Typical 
                     className ="dark-hero-text"

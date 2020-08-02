@@ -18,6 +18,8 @@ $shaft-thickness: 1px;
 $arrow-head-width: 8px;
 $arrow-head-thickness: $shaft-thickness;
 
+$animate: all 0.2s ease-in-out;
+
 #root,
 html,
 body {
@@ -53,6 +55,19 @@ body {
 .blog-title {
     font-weight: 600;
     letter-spacing: -0.06em;
+}
+
+.blog-links {
+    a {
+        color: grey;
+    }
+    a:hover {
+        color: $DarkModeText;
+        text-decoration: none;
+    }
+    .blog-links-date {
+        color: rgb(100, 100, 100);
+    }
 }
 
 $breakpoint-tablet: 768px;
