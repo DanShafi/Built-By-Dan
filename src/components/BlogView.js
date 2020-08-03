@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 class BlogView extends Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class BlogView extends Component {
     if (this.state.post.title) {
       build = (
         <Container style={{maxWidth: '800px'}}>
+          <Link to='/'>Go Back</Link>
           <h1 className="blog-title">{this.state.post.title.rendered}</h1>
           <div dangerouslySetInnerHTML={this.createMarkup( this.state.post.content.rendered )} />
         </Container>
