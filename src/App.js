@@ -15,25 +15,19 @@ const App = () => {
 
   return (
     <Router>
+
       <div className={lightMode ? "light-mode" : "dark-mode"}>
 
         <Container>
           <Nav style={{fontSize: 15}} expand="lg" className="nav-gap pt-4 pb-5" >
-            <Navbar.Brand className={lightMode ? "light-mode" : "dark-mode"} href="/" style={{fontSize: 15, fontWeight: "bold"}}>Built By Dan.</Navbar.Brand>
-            <div className ="toggle-container ml-auto">
-              <span className="toggle">
-              <span style={{ color: lightMode ? "yellow" : "grey" }}>☀</span>
-                <input
-                  checked={lightMode}
-                  onChange={() => setLightMode(prevMode => !prevMode)}
-                  type="checkbox"
-                  className="checkbox"
-                  id="checkbox"
-                />
-                <label htmlFor="checkbox" />
-              </span>
-              <span style={{ color: lightMode ? "slateblue" : "grey" }}>☽</span>
-            </div>
+            <Navbar.Brand className={lightMode ? "light-mode" : "dark-mode"} href="/" id="logo">Built By Dan.</Navbar.Brand>
+            <img
+              className="mode-switch ml-auto"
+              onClick={() => setLightMode(prevMode => !prevMode)}
+              src={lightMode ? require("./media/sun-icon-retina.svg") : require("./media/moon-icon-retina.svg")}
+              alt="lightning-bolt"
+              height="30px"
+            />
           </Nav>
         </Container>
         

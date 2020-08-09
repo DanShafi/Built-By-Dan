@@ -27,80 +27,54 @@ body {
     font-family: $PrimaryFont;
 }
 
+#logo {
+    font-size: 15px;
+    font-weight: bold;
+    &:hover {
+        color: white;
+        transform: scale(1.1);
+    }
+}
+
+.scroll-border {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.scroll-border::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    transition: width 0.3s;
+}
+
+.scroll-border:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
 .mode-switch {
     cursor: pointer;
-}
-
-.toggle {
-    position: relative;
-    padding: 0 4px;
-    display: flex;
-    align-items: center;
-}
-
-input[type="checkbox"].checkbox {
-    width: 40px;
-    height: 10px;
-    background: #555;
-    position: relative;
-    border-radius: 5px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    vertical-align: 2px;
-    outline: none;
-}
-
-input[type="checkbox"].checkbox:checked + label {
-    left: 30px;
-}
-
-input[type="checkbox"].checkbox:focus-visible {
-    outline: solid 2px white;
-}
-
-input[type="checkbox"].checkbox + label {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: absolute;
-    left: 2px;
-    background: #fff;
-    opacity: 0.9;
-    background-color: cyan;
-}
-
-.toggle-container {
-    display: flex;
-    margin: 0 auto;
-}
-
-.toggle-container > span {
-    font-size: 1.2em;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    margin-top: 4px;
-    margin-right: 2px;
-}
-
-.toggle-container > span:last-child {
-    margin-top: 5px;
+    transform: scale(0.8);
+    &:hover {
+        transform: scale(0.9);
+        transition: 0.3s ease-in-out;
+    }
 }
 
 .dark-mode {
     background-color: $DarkModeBg;
     color: $DarkModeText;
+    transition: all 0.3s ease;
 }
 
 .light-mode {
     background-color: $LightModeBg;
     color: $LightModeText;
+    transition: all 0.3s ease;
 }
 
 .nav-gap {
@@ -134,7 +108,7 @@ input[type="checkbox"].checkbox + label {
 
 .blog-links {
     a {
-        color: grey;
+        color: $DarkModeText;
     }
     a:hover {
         color: $DarkModeText;
@@ -143,6 +117,10 @@ input[type="checkbox"].checkbox + label {
     .blog-links-date {
         color: rgb(100, 100, 100);
     }
+}
+
+.border-anim {
+    border-bottom: 4px solid white;
 }
 
 $breakpoint-tablet: 768px;

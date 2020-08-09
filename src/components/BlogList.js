@@ -35,13 +35,13 @@ class BlogList extends Component {
             {this.state.posts.map(post => (
             <Link to={`/${post.slug}`} key={post.id}>
               <div className="mb-5" key={post.id}>
-                  <p className="blog-links-date">{post.formatted_date}</p>
                   <div>
                     <span className="hover hover-1">
-                      <h2 className="blog-title">{post.title.rendered}</h2>
+                      <h2 className="blog-title scroll-border">{post.title.rendered}</h2>
                     </span>
                   </div>
                   <div dangerouslySetInnerHTML={this.createMarkup( post.excerpt.rendered )} />
+                  <p className="blog-links-date">{post.formatted_date}</p>
               </div>
             </Link>
             ))}

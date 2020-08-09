@@ -14,8 +14,7 @@ class Hero extends React.Component {
                     wrapper="h1"
                     steps={["Frontend developer and web designer "]}
                 />
-                </div>
-
+                </div>  
                 <div className ="hr-line" />
 
                 <div className="row sub-text">
