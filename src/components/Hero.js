@@ -24,7 +24,9 @@ class Hero extends React.Component {
                     An aficiando for simple, beautiful UI and the code to match.
                     <br /><br />
                     <p className="text-muted">
-                        This site is currently in beta mode - v.1.0
+                        This site is currently in beta mode - v.1.0. Some original features that were built locally
+                        were lost during the migration to Vercel from a Legacy host. This website will retain
+                        it's original domain www.builtbydan.com once the migration is complete.
                     </p>
                     </p>
                 </div>
