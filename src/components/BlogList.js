@@ -27,11 +27,11 @@ class BlogList extends Component {
 
   render() {
     return (
-      <Container style={{marginTop: '250px'}}>
-          <img src={BG} alt={"Plus Sign Background"} height="150px" />
+      <Container className="mt-5 pt-5">
         <Row>
           <h3 className="dark-title-text col-lg-4">Blog.</h3>
           <div className="col-lg-8 blog-links">
+          <p className="text-muted mt-3">404: Vercel has blocked an Axios request to the WordPress API. This component is being reviewed.</p>
             {this.state.posts.map(post => (
             <Link to={`/${post.slug}`} key={post.id}>
               <div className="mb-5" key={post.id}>

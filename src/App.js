@@ -20,7 +20,7 @@ const App = () => {
 
         <Container>
           <Nav style={{fontSize: 15}} expand="lg" className="nav-gap pt-4 pb-5" >
-            <Navbar.Brand className={lightMode ? "light-mode" : "dark-mode"} href="/" id="logo">Built By Dan.</Navbar.Brand>
+            <Navbar.Brand className={lightMode ? "light-mode" : "dark-mode"} href="/" id="logo">Built By Dan - Beta v.1.0</Navbar.Brand>
             <img
               className="mode-switch ml-auto"
               onClick={() => setLightMode(prevMode => !prevMode)}
