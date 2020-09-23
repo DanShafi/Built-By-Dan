@@ -15,7 +15,7 @@ class BlogView extends Component {
   componentDidMount() {
     const slug = this.props.match.params.slug;
     axios
-      .get(`http://blog.builtbydan.com/wp-json/wp/v2/posts?slug=${slug}`)
+      .get(`https://blog.builtbydan.com/wp-json/wp/v2/posts?slug=${slug}`)
       .then(post => {
         this.setState({
           post: post.data[0]

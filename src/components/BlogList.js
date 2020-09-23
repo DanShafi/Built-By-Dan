@@ -13,7 +13,7 @@ class BlogList extends Component {
   }
 
   componentDidMount() {
-    axios.get("http://blog.builtbydan.com/wp-json/wp/v2/posts").then(posts => {
+    axios.get("https://blog.builtbydan.com/wp-json/wp/v2/posts").then(posts => {
       this.setState({
         posts: posts.data
       });
