@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { Container, Row } from 'react-bootstrap'
-import BG from '../media/Plus-Sign-Dark-Mode-BG.svg'
 
 class BlogList extends Component {
   constructor(props) {
@@ -31,7 +30,6 @@ class BlogList extends Component {
         <Row>
           <h3 className="dark-title-text col-lg-4">Blog.</h3>
           <div className="col-lg-8 blog-links">
-          <p className="text-muted mt-3">404: Vercel has blocked an Axios request to the WordPress API. This component is being reviewed.</p>
             {this.state.posts.map(post => (
             <Link to={`/${post.slug}`} key={post.id}>
               <div className="mb-5" key={post.id}>
