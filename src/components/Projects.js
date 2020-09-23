@@ -37,6 +37,24 @@ const Projects = () => {
             </Row>
             <Row className="mt-5">
                 <Col lg={4}>
+                    <h3 style={textStyle}>+ Miss Irfan - Personal Tutor</h3>
+                </Col>
+                <Col lg={8}>
+                    <p>Stack: HTML / SCSS / Bootstrap / JavaScript / NPM / UNPKG / Figma</p>
+                    <p>
+                        One-pager fully responsive landing page for a personal English tutor. The website was designed from scratch using Figma
+                        and built with HTML, Bootstrap and SCSS. The project also takes advantage of an external
+                        module from UNPKG, to render animation-on-load.
+                    </p>
+                    <p className="text-muted">
+                        The was a paid-for commercial project.
+                    </p>
+                    <a style={linkColour} className="mr-3" href="https://missirfan.com/" target="_blank">Live</a>
+                    <a style={linkColour} href="https://github.com/DanShafi/MissIrfan.com" target="_blank">Source Code</a>
+                </Col>
+            </Row>
+            <Row className="mt-5">
+                <Col lg={4}>
                     <h3 style={textStyle}>+ The Space Programme</h3>
                 </Col>
                 <Col lg={8}>
@@ -48,7 +66,6 @@ const Projects = () => {
                     <p className="text-muted">
                         The site has not been fully mobile-tested as it was purpose built for desktop.
                     </p>
-                    <a style={linkColour} className="mr-3" href="https://hsc-application.vercel.app/" target="_blank">Live</a>
                     <a style={linkColour} href="https://github.com/DanShafi/The-Space-Programme" target="_blank">Source Code</a>
                 </Col>
             </Row>
