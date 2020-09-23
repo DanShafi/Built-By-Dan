@@ -27,23 +27,22 @@ const Projects = () => {
                         Hosted with Vercel and currently in beta. The WordPress API has failed to make a fetch request
                         with Vercel - fix pending.
                     </p>
-                    <a className="mr-3" href="https://builtbydan.vercel.app" target="_blank">Live</a>
+                    <a className="mr-3" href="https://builtbydan.com" target="_blank">Live</a>
                     <a href="https://github.com/danshafi/builtbydan" target="_blank">Source Code</a>
                 </Col>
             </Row>
             <Row className="mt-5">
                 <Col lg={4}>
-                    <h3 style={textStyle}>+ Hungry Sandwich Club</h3>
+                    <h3 style={textStyle}>+ The Space Programme</h3>
                 </Col>
                 <Col lg={8}>
-                    <p>Stack: React.js / JavaScript / CSS3 / SASS </p>
+                    <p>Stack: Parcel.js / HTML / CSS3 / SASS / Figma </p>
                     <p>
-                        An interactive cover letter in the format of a website, emulating the original Hungry Sandwich Club
-                        site style. The hero component comprises of multiple SVG's and keyframe CSS3 animations. Adobe
-                        Photoshop was used to create an illustration.
+                        A one-pager static site created for a technical test and packaged using Parcel.js. The task involved 
+                        using a Figma file and re-creating the components as per the design structure.
                     </p>
                     <p className="text-muted">
-                        Although responsive, the site has not been fully mobile-tested as it was purpose built for desktop.
+                        The site has not been fully mobile-tested as it was purpose built for desktop.
                     </p>
                     <a className="mr-3" href="https://hsc-application.vercel.app/" target="_blank">Live</a>
                     <a href="https://github.com/DanShafi/HSC-Application" target="_blank">Source Code</a>
